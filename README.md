@@ -28,7 +28,7 @@ This project is based on the course [React and TypeScript: Build a Portfolio Pro
 ### esbuild
 
 - **Description**: A fast, parallel JavaScript bundler and minifier.
-- **Usage**: Used to bundle and optimize the project's source code.
+- **Usage**: Used to bundle client-side scripting in the project.
 
 ### unpkg
 
