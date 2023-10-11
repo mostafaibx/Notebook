@@ -1,0 +1,13 @@
+.editor-wrapper {
+  width: 100%;
+  height: 500px;
+  @apply h-full relative;
+}
+
+.formate-btn {
+  opacity: 0.25;
+  @apply bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-1 px-2 rounded absolute z-50 right-3 top-2 transition-all duration-500;
+}
+.formate-btn:hover {
+  opacity: 1;
+}

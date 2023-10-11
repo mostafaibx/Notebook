@@ -1,46 +1,99 @@
-# Getting Started with Create React App
+# Nootbook
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Nootbook is an interactive web-based notebook application that allows users to create and edit documents consisting of two primary types of cells: code editor cells and text editor cells. Users can add, rearrange, and manipulate these cells within the notebook, compile code in the code cells, and use Markdown in the text editor cells. The notebook can be saved as a JavaScript file for later use. This project is developed using React with TypeScript, and it utilizes several libraries to provide this functionality.
 
-In the project directory, you can run:
+This project is based on the course [React and TypeScript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/). We would like to acknowledge the valuable learnings and inspiration from this course in building Nootbook.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Create, edit, and manage code cells with real-time compilation previews.
+- Create and edit text cells with support for Markdown markup.
+- Add, move, and delete cells within the notebook.
+- Save the notebook as a JavaScript file.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Libraries and Technologies Used
 
-### `npm test`
+### React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Description**: A popular JavaScript library for building user interfaces.
+- **Usage**: The entire project is built with React, making it a single-page application.
 
-### `npm run build`
+### TypeScript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Description**: A statically typed superset of JavaScript.
+- **Usage**: TypeScript is used to add strong typing to the project, improving code quality and maintainability.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### esbuild
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Description**: A fast, parallel JavaScript bundler and minifier.
+- **Usage**: Used to bundle and optimize the project's source code.
 
-### `npm run eject`
+### unpkg
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Description**: A fast, global content delivery network for everything on npm.
+- **Usage**: Provides access to libraries and packages for client-side scripting in the project.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Redux
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Description**: A predictable state container for managing application state.
+- **Usage**: Manages the application's state, allowing for the dynamic addition, removal, and reordering of notebook cells.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prettier
 
-## Learn More
+- **Description**: An opinionated code formatter to ensure consistent code styling.
+- **Usage**: Ensures code consistency and readability throughout the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Monaco Editor
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Description**: A lightweight, fast code editor component based on Visual Studio Code.
+- **Usage**: Provides the code editor cells' functionality, offering syntax highlighting and code editing features.
+
+### MDEditor
+
+- **Description**: A Markdown editor for React.
+- **Usage**: Used for creating and editing text cells with Markdown support.
+
+### localforage
+
+- **Description**: A library for offline storage, improving web application performance.
+- **Usage**: Utilized for efficient local storage and data persistence in the project.
+
+### react-grid-layout
+
+- **Description**: A draggable and resizable grid layout for React.
+- **Usage**: Provides the grid layout functionality for the dynamic arrangement and resizing of notebook cells.
+
+### Tailwind CSS
+
+- **Description**: A utility-first CSS framework for rapid UI development.
+- **Usage**: Provides the styling for the entire application, ensuring a responsive and visually appealing user interface.
+
+## Usage
+
+1. **Create Cells:**
+
+   - Click the "Add Code" button to create a new code cell.
+   - Click the "Add Text" button to create a new text cell.
+
+2. **Edit Cells:**
+
+   - Code Cells: Type code in the code editor. Code will compile in real-time in the preview iframe.
+   - Text Cells: Edit the content with Markdown markup.
+
+3. **Manipulate Cells:**
+
+   - Drag and drop cells to rearrange them.
+   - Click the "Delete" button to remove a cell.
+
+## Contributing
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the project on GitHub.
+2. Create a new branch with a descriptive name.
+3. Implement your changes and test them thoroughly.
+4. Commit your changes with clear, concise messages.
+5. Push your branch to your fork.
+6. Create a pull request against the original repository.

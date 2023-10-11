@@ -1,0 +1,16 @@
+.add-new-cell {
+  opacity: 1;
+
+  @apply p-1 flex items-center justify-center mt-7 transition-all duration-500;
+  position: relative;
+}
+/* .add-new-cell {
+  opacity: 0;
+} */
+.add-new-cell::before {
+  content: "";
+  width: 100%;
+  border: 1px solid rgb(202, 202, 202);
+  height: 2px;
+  @apply absolute inset-1 w-full;
+}
