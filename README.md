@@ -2,16 +2,21 @@
 
 ## Introduction
 
-Nootbook is an interactive web-based notebook application that allows users to create and edit documents consisting of two primary types of cells: code editor cells and text editor cells. Users can add, rearrange, and manipulate these cells within the notebook, compile code in the code cells, and use Markdown in the text editor cells. The notebook can be saved as a JavaScript file for later use. This project is developed using React with TypeScript, and it utilizes several libraries to provide this functionality.
+Nootbook is an interactive web-based notebook application that allows users to create and edit documents consisting of two primary types of cells: code editor cells and text editor cells. Users can add, rearrange, and manipulate these cells within the notebook, compile code in the code cells, and use Markdown in the text editor cells. This project is developed using React with TypeScript, and it utilizes several libraries to provide this functionality.
 
-This project is based on the course [React and TypeScript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/). We would like to acknowledge the valuable learnings and inspiration from this course in building Nootbook.
+This project is based on the course [React and TypeScript: Build a Portfolio Project](https://www.udemy.com/course/react-and-typescript-build-a-portfolio-project/). I would like to acknowledge the valuable learnings and inspiration from this course in building Nootbook.
+
+## to see full Description of the Project, please this link on Notion: [Full Explination on Notion](https://www.notion.so/Notebook-PJ-5a780ffab3c14a4292c9513aad5d0f61?pvs=4)
+
+## For Live Preview: 
 
 ## Features
 
 - Create, edit, and manage code cells with real-time compilation previews.
+- User can write code in JavaScript, JSX, and Import libraries from npm.
 - Create and edit text cells with support for Markdown markup.
 - Add, move, and delete cells within the notebook.
-- Save the notebook as a JavaScript file.
+
 
 ## Libraries and Technologies Used
 
@@ -60,10 +65,14 @@ This project is based on the course [React and TypeScript: Build a Portfolio Pro
 - **Description**: A library for offline storage, improving web application performance.
 - **Usage**: Utilized for efficient local storage and data persistence in the project.
 
-### react-grid-layout
+### axios
+- **Description**:  A promise-based HTTP client for the browser and Node.js. It simplifies the process of making HTTP requests and handling responses.
+- **Usage**: Used in the project for sending asynchronous HTTP requests to external APIs or backend services. Enables efficient communication between the client and server.
 
-- **Description**: A draggable and resizable grid layout for React.
-- **Usage**: Provides the grid layout functionality for the dynamic arrangement and resizing of notebook cells.
+### Immer
+- **Description**: allows easy and efficient immutable updates to nested data structures. Immer simplifies the process of working with immutable state, particularly useful in the context of state management in React applications.
+- **Usage**: Employed in the project to handle state immutability, making it easier to manage and update complex data structures. Enhances the predictability and clarity of state management code.
+
 
 ### Tailwind CSS
 
