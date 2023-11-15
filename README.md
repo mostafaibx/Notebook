@@ -8,7 +8,7 @@ This project is based on the course [React and TypeScript: Build a Portfolio Pro
 
 ## to see full Description of the Project, please this link on Notion: [Full Explination on Notion](https://www.notion.so/Notebook-PJ-5a780ffab3c14a4292c9513aad5d0f61?pvs=4)
 
-## For Live Preview: 
+## For Live Preview: https://serene-caramel-c573a3.netlify.app/
 
 ## Features
 
