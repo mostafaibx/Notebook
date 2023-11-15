@@ -47,9 +47,13 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
     );
   }
 
+  const defVal = `<p align="center">
+  <strong style="font-size: larger;">Click here to edit.</strong>
+</p>`;
+
   return (
     <div className="text-editor-wrapper" onClick={() => setEditing(true)}>
-      <MDEditor.Markdown source={cell.content || "Click to edit"} />
+      <MDEditor.Markdown source={cell.content || defVal} />
     </div>
   );
 };

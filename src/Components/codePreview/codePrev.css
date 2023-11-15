@@ -1,5 +1,5 @@
 .prev-wrapper {
-  @apply relative w-full h-48;
+  @apply relative w-1/2 h-48;
 }
 .prev-iframe {
   height: 100%;

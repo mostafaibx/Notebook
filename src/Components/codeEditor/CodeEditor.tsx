@@ -12,12 +12,6 @@ interface CodeEditorProps {
 const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
   const editorRef = useRef<any>();
 
-  /*
- A description of the entire function.
- @param {CodeEditorProps} initialValue - the initial value for the code editor
- @param {function} onChange - callback function called when the code in the editor changes
- @return {ReactElement} the rendered CodeEditor component
- */
   const onEditorDidMount: EditorDidMount = (getValue, monacoEditor) => {
     editorRef.current = monacoEditor;
     monacoEditor.onDidChangeModelContent(() => {
@@ -36,7 +30,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue, onChange }) => {
   }
 
   return (
-    <div className="w-full h-48">
+    <div className="min:w-[300px] w-1/2 h-48 ">
       <button className="formate-btn" onClick={onFormatClick}>
         Format
       </button>

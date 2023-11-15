@@ -9,19 +9,21 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
   const { insertCellAfter } = useActions();
 
   return (
-    <div className="add-new-cell hover:add-new-cell-hover">
-      <button
-        className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-1 px-2 rounded mr-2"
-        onClick={() => insertCellAfter(nextCellId, "text")}
-      >
-        Text
-      </button>
-      <button
-        className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-1 px-2 rounded mr-2"
-        onClick={() => insertCellAfter(nextCellId, "code")}
-      >
-        Code
-      </button>
+    <div className="add-new-cell">
+      <div className="add-new-container">
+        <button
+          className="add-new-btn"
+          onClick={() => insertCellAfter(nextCellId, "text")}
+        >
+          Text
+        </button>
+        <button
+          className="add-new-btn"
+          onClick={() => insertCellAfter(nextCellId, "code")}
+        >
+          Code
+        </button>
+      </div>
     </div>
   );
 };

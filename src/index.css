@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.body {
-  margin: 0;
+body {
+  @apply bg-gradient-to-t from-sail-400 to-sail-700 min-h-screen;
 }

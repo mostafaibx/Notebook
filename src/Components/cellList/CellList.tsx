@@ -10,12 +10,15 @@ const CellList: React.FC = () => {
   });
 
   return (
-    <div className="container mx-auto p-2 bg-gray-800 text-white rounded-xl">
+    <div className="container mx-auto p-2 text-white">
       {cells.map((cell: Cell) => (
-        <Fragment key={cell.id}>
+        <div
+          key={cell.id}
+          className="flex flex-col items-center justify-center"
+        >
           <CellListItem cell={cell} />
           <AddCell nextCellId={cell.id} />
-        </Fragment>
+        </div>
       ))}
     </div>
   );

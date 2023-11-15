@@ -1,16 +1,11 @@
 .add-new-cell {
-  opacity: 1;
-
-  @apply p-1 flex items-center justify-center mt-7 transition-all duration-500;
-  position: relative;
+  @apply w-11/12 h-1 bg-sail-900 relative mx-7;
 }
-/* .add-new-cell {
-  opacity: 0;
-} */
-.add-new-cell::before {
-  content: "";
-  width: 100%;
-  border: 1px solid rgb(202, 202, 202);
-  height: 2px;
-  @apply absolute inset-1 w-full;
+
+.add-new-container {
+  @apply absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
+.add-new-btn {
+  @apply bg-sail-400 hover:bg-sail-900 text-white font-bold text-lg py-1 px-3 rounded mr-2 transform transition-all duration-300;
 }

@@ -1,11 +1,9 @@
 import { useEffect } from "react";
-
 import CodeEditor from "../codeEditor/CodeEditor";
 import CodePrev from "../codePreview/CodePrev";
 import { Cell } from "../../Store/cell";
 import { useActions } from "../../hooks/useActions";
 import useTypedSelector from "../../hooks/useTypedSelector";
-
 import { useCumilativeCode } from "../../hooks/useCumilativeCode";
 
 interface CodeCellProps {
@@ -42,13 +40,13 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
         }}
       />
 
-      <div>
+      <>
         {!bundle || bundle.loading ? (
-          <div>Loading...</div>
+          <div className="w-1/2">Loading...</div>
         ) : (
           <CodePrev code={bundle.code} err={bundle.err} />
         )}
-      </div>
+      </>
     </div>
   );
 };
